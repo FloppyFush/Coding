@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <style>
+        
+            
+            
+        #point1 {
+            animation-name: move;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            margin: auto;
+            position: relative;
+            transform: rotate(45deg);
+        }
+        #KoolKid {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            z-index: -2;
+        }
+        @keyframes move {
+            0% {
+                top: -250px;
+                left: 50px;
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                top: -150px;
+                left: 150px;
+                transform: scale(0.6) rotate(-45deg);
+            }
+            100% {
+                top: -250px;
+                left: 50px;
+                transform: scale(1) rotate(-45deg);
+            }
+        }
+        #point2 {
+            animation-name: moveother;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            margin: auto;
+            position: relative;
+            transform: rotate(45deg);
+        }
+        @keyframes moveother {
+            0% {
+                top: -150px;
+                right: -40px;
+                transform: scale(1) rotate(45deg) scaleX(-1);
+            }
+            50% {
+                top: -50px;
+                right: 60px;
+                transform: scale(0.6) rotate(45deg) scaleX(-1);
+            }
+            100% {
+                top: -150px;
+                right: -40px;
+                transform: scale(1) rotate(45deg) scaleX(-1);
+            }
+        }
+        h1 {
+            position: relative;
+            left: 200px;
+            top: 25px;
+            color: blue;
+            animation-name: rainbow;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        @keyframes rainbow {
+            0% {
+                color: red;
+            }
+            30% {
+                color: yellow;
+            }
+            60% {
+                color: blue;
+            }
+            100% {
+                color: red;
+            }
+        }
+        img {
+            z-index: -1;
+        }
+        </style>
+    </head>
+    <body style="background-color:black;">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Twemoji2_1f447.svg" id="point1" width="100" height="100">
+            <img src="C:\Users\Toby\Desktop\Website\YourFace2.jpg" id="KoolKid" width="300" height="300">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Twemoji2_1f447.svg" id="point2" width="100" height="100">
+            <h1>Cool Person</h1>
+        </div>
+    </body>
+</html>
