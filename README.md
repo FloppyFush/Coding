@@ -1,2 +1,2 @@
-# Coding
-This is where I'm gonna put all my coding projects
+# C++
+This is where I'm gonna put all my C++ projects
